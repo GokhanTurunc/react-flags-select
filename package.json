@@ -7,6 +7,9 @@
   "files": [
     "build"
   ],
+  "precommit": [
+    "build"
+  ],
   "scripts": {
     "lint": "yarn check-types && yarn lint:js",
     "check-types": "tsc --noEmit",
