@@ -196,7 +196,8 @@ const ReactFlagsSelect: React.FC<Props> = ({
           [styles.disabledBtn]: disabled,
         })}
         style={{ fontSize: selectedSize }}
-        onHover={toggleDropdown}
+        onMouseOver={toggleDropdown}
+        onClick={toggleDropdown}
         onKeyUp={(e) => closeDropdwownWithKeyboard(e)}
         disabled={disabled}
         aria-labelledby={btnId}
