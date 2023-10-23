@@ -72,7 +72,7 @@ const ReactFlagsSelect: React.FC<Props> = ({
   rfsKey = "rfs",
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
-  const [countriesOptions, setCountriesOptions] = useState<CountryCodes>([]);
+  const [countriesOptions, setCountriesOptions] = useState<CountryCodes>(getCountryCodes(countries, blacklistCountries));
   const [
     filteredCountriesOptions,
     setFilteredCountriesOptions,
